@@ -1,0 +1,28 @@
+{
+	"name": "server-tdd",
+	"version": "0.0.1",
+	"description": "TDD server using node, express, ts + postgresql",
+	"main": "app.ts",
+	"scripts": {
+		"start": "tsc && node build/app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/guydani/server-tdd.git"
+	},
+	"author": "Guy Dani",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/guydani/server-tdd/issues"
+	},
+	"homepage": "https://github.com/guydani/server-tdd#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.2",
+		"@types/node": "^10.15.0",
+		"tslint": "^5.20.1",
+		"typescript": "^3.7.3"
+	}
+}

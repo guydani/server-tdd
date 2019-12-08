@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"target": "es5",
+		"noImplicitAny": false,
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "build",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"declaration": false,
+		"noImplicitReturns": false,
+		"noUnusedLocals": true,
+		"removeComments": true,
+		"strictNullChecks": false,
+		"lib": ["es6", "es7", "dom"],
+		"baseUrl": "src",
+		"paths": {
+			"app/*": ["./app/*"]
+		}
+	},
+	"exclude": ["dist", "build", "node_modules"]
+}
