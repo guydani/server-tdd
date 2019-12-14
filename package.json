@@ -5,8 +5,7 @@
 	"main": "build/server.js",
 	"scripts": {
 		"start:watch": "nodemon -r esm -r ts-node/register ./src/server.ts",
-		"build": "tsc",
-		"start": "node -r esm -r ts-node/register ./src/server.ts"
+		"start": "tsc && node start.js"
 	},
 	"repository": {
 		"type": "git",
