@@ -1,23 +1,22 @@
 {
 	"compilerOptions": {
-		"esModuleInterop": true,
-		"target": "es5",
-		"noImplicitAny": false,
+		"target": "esnext",
+		"module": "esnext",
 		"moduleResolution": "node",
 		"sourceMap": true,
 		"outDir": "build",
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"declaration": false,
-		"noImplicitReturns": false,
+		"allowSyntheticDefaultImports": true,
+		"noImplicitReturns": true,
 		"noUnusedLocals": true,
 		"removeComments": true,
-		"strictNullChecks": false,
-		"lib": ["es6", "es7", "dom"],
+		"strictNullChecks": true,
+		"lib": ["dom", "es2018"],
+		"resolveJsonModule": true,
+		"strict": true,
 		"baseUrl": "src",
-		"paths": {
-			"app/*": ["./app/*"]
-		}
+
+		"typeRoots": ["node_modules/@types"]
 	},
-	"exclude": ["dist", "build", "node_modules"]
+	"exclude": ["build", "node_modules"],
+	"include": ["src/**/*.ts"]
 }
