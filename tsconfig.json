@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "esnext",
-		"module": "esnext",
+		"module": "commonjs",
 		"moduleResolution": "node",
 		"sourceMap": true,
 		"outDir": "build",
@@ -14,7 +14,6 @@
 		"resolveJsonModule": true,
 		"strict": true,
 		"baseUrl": "src",
-
 		"typeRoots": ["node_modules/@types"]
 	},
 	"exclude": ["build", "node_modules"],
