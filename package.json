@@ -4,6 +4,9 @@
 	"description": "TDD server using node, express, ts + postgresql",
 	"main": "build/server.js",
 	"scripts": {
+		"db:drop": "dropdb",
+		"db:create": "createdb",
+		"db:migrate": "yarn migrate up",
 		"migrate": "ts-node node_modules/.bin/node-pg-migrate -j ts",
 		"start:watch": "nodemon -r esm -r ts-node/register ./src/server.ts",
 		"start": "tsc && node start.js"
@@ -14,10 +17,6 @@
 	},
 	"author": "Guy Dani",
 	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/guydani/server-tdd/issues"
-	},
-	"homepage": "https://github.com/guydani/server-tdd#readme",
 	"dependencies": {
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
