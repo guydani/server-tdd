@@ -33,3 +33,6 @@ for create first table, try from the terminal: npm run migrate create users tabl
 for make node-pg-migrate run, you need to config on which database run the migrate (https://github.com/salsita/node-pg-migrate/blob/master/docs/cli.md)
 we use .env (https://www.npmjs.com/package/dotenv) to config(after installation, create .env file, and write there these row:
 DATABASE_URL=postgres://{username}:{user-password}@localhost:5432/{db-name})
+
+we use node-pg-native for better performance (https://www.npmjs.com/package/pg-native)
+for the seed use, we need a transaction query like in (https://node-postgres.com/features/transactions)
