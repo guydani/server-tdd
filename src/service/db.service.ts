@@ -7,7 +7,7 @@ const pool = new pg.native!.Pool({
 		process.env.NODE_ENV === 'test' ? process.env.TEST_DATABASE_URL : process.env.DATABASE_URL
 });
 
-export const query = async (queryString: string) => {
+export const query = async (queryString: any) => {
 	try {
 		const res = await pool.query(queryString);
 		return res.rows;
@@ -17,7 +17,7 @@ export const query = async (queryString: string) => {
 	}
 };
 
-export const runTransaction = async (queriesString: string[]) => {
+export const runTransaction = async (queriesString: any[]) => {
 	const client = await pool.connect();
 	try {
 		await client.query('BEGIN');

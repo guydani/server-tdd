@@ -36,3 +36,5 @@ DATABASE_URL=postgres://{username}:{user-password}@localhost:5432/{db-name})
 
 we use node-pg-native for better performance (https://www.npmjs.com/package/pg-native)
 for the seed use, we need a transaction query like in (https://node-postgres.com/features/transactions)
+
+for a bit more readable queries, I prefer to use squel.js. there some problems with this libarary. if you won't use it correct, you expose to sql injection. like it said here: https://www.npmjs.com/advisories/575. but if you use it correctly, with query param, it's very good. another problem with this package, it's not maintained any more. but, it has some cool features, and it's very flexible, because you can decide writing pure SQL, and ignore this package.
